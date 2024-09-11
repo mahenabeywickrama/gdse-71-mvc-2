@@ -11,13 +11,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import mvc2.db.DBConnection;
-import mvc2.dto.custDto;
+import mvc2.dto.CustomerDto;
 
 /**
  *
  * @author mahen
  */
-public class custModel {
+public class CustomerModel {
     
     public String Save() throws SQLException, ClassNotFoundException{
          Connection connection = DBConnection.getInstance().getConnection();
@@ -25,10 +25,10 @@ public class custModel {
          PreparedStatement statment = connection.prepareStatement(sql);
          
         ResultSet rst = statment.executeQuery();
-        ArrayList<custDto> custDtos = new ArrayList<>();
+        ArrayList<CustomerDto> custDtos = new ArrayList<>();
         
         while(rst.next()){
-           custDto CUSTDTO = new custDto();
+           CustomerDto CUSTDTO = new CustomerDto();
            
         
         }

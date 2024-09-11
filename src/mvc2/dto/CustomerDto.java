@@ -8,7 +8,7 @@ package mvc2.dto;
  *
  * @author mahen
  */
-public class custDto{
+public class CustomerDto{
     
     private String custID;
     private String custTitle;
@@ -20,7 +20,7 @@ public class custDto{
     private String province;
     private int postalCode;
 
-    public custDto(String custID, String custTitle, String custName, String dOB, double salary, String custAddress, String city, String province, int postalCode) {
+    public CustomerDto(String custID, String custTitle, String custName, String dOB, double salary, String custAddress, String city, String province, int postalCode) {
         this.custID = custID;
         this.custTitle = custTitle;
         this.custName = custName;
